@@ -10,6 +10,8 @@ const { mix } = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+// el primer argumento lleva el fichero con su ruta que incluye determinado framework js (Vue), y el segundo es la salida
+mix.js('resources/assets/js/pruebaVue.js', 'public/js')
+   //js('resources/assets/js/app.js', 'public/js'); 
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .version(); // para evitar el cache del navegador

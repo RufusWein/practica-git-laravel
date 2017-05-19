@@ -1,4 +1,12 @@
+/** 
+ * Ejercicio Webpack usando la tostada
+ * 
+ */
 
+window.toastr = require('toastr');
+
+/////////////////////////////////////////////////////////
+ 
 window._ = require('lodash');
 
 /**
